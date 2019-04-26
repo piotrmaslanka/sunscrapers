@@ -1,2 +1,4 @@
+Django
+django-rest-framework
 requests
 untangle
