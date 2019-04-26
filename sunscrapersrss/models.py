@@ -11,5 +11,6 @@ class CurrencyRate(models.Model):
     class Meta:
         indexes = [
             models.Index(
-                fields=['currency_from', 'currency_to', 'currency_date'])
+                fields=['currency_from', 'currency_to', 'currency_date']),
+            models.Index(fields=['currency_date'])
         ]
