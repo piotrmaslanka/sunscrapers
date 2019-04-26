@@ -1,7 +1,7 @@
-from django.test import TestCase
 from rest_framework.test import APITestCase
-import datetime
+
 from .models import CurrencyRate
+
 
 class TestAPI(APITestCase):
 

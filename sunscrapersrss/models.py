@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class CurrencyRate(models.Model):
     currency_from = models.TextField(max_length=3)
@@ -9,5 +10,6 @@ class CurrencyRate(models.Model):
 
     class Meta:
         indexes = [
-            models.Index(fields=['currency_from', 'currency_to', 'currency_date'])
+            models.Index(
+                fields=['currency_from', 'currency_to', 'currency_date'])
         ]

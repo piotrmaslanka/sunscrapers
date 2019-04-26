@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -14,7 +13,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CurrencyRate',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True,
+                                        serialize=False, verbose_name='ID')),
                 ('currency_from', models.TextField(max_length=3)),
                 ('currency_to', models.TextField(max_length=3)),
                 ('currency_rate', models.FloatField()),
@@ -23,6 +23,8 @@ class Migration(migrations.Migration):
         ),
         migrations.AddIndex(
             model_name='currencyrate',
-            index=models.Index(fields=['currency_from', 'currency_to', 'currency_date'], name='sunscrapers_currenc_b067a8_idx'),
+            index=models.Index(
+                fields=['currency_from', 'currency_to', 'currency_date'],
+                name='sunscrapers_currenc_b067a8_idx'),
         ),
     ]

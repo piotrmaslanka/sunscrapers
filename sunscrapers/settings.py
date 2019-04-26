@@ -27,10 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CURRENCIES_TO_SCRAPE_FOR = ['pln', 'usd', 'chf', 'gbp', 'jpy', 'bgn', 'czk', 'dkk',
+CURRENCIES_TO_SCRAPE_FOR = ['pln', 'usd', 'chf', 'gbp', 'jpy', 'bgn', 'czk',
+                            'dkk',
                             'eek', 'huf', 'ron', 'sek', 'isk', 'nok', 'hrk',
-                            'rub', 'try', 'aud', 'brl', 'cad', 'cny', 'hkd', 'idr',
-                            'inr', 'krw', 'mxn', 'myr', 'nzd', 'php', 'sgd', 'tbh',
+                            'rub', 'try', 'aud', 'brl', 'cad', 'cny', 'hkd',
+                            'idr',
+                            'inr', 'krw', 'mxn', 'myr', 'nzd', 'php', 'sgd',
+                            'tbh',
                             'zar']
 
 # Application definition
@@ -40,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.auth',
     'sunscrapersrss.apps.SunscrapersrssConfig',
- ]
+]
 
 MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
@@ -80,7 +83,6 @@ REST_FRAMEWORK = {
 
 WSGI_APPLICATION = 'sunscrapers.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -91,12 +93,10 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = []
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -110,7 +110,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
